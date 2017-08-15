@@ -49,7 +49,10 @@ class Home extends Component {
 }
 
   render() {
-    var currentView = (this.state.isLoading)?<View/>:<ListView dataSource={this.state.dataSource} renderRow={this.renderRow.bind(this)} enableEmptySections={true}/>
+    var currentView = (this.state.isLoading)?
+        <View/>:<ListView dataSource={this.state.dataSource} 
+    renderRow={this.renderRow.bind(this)} 
+    enableEmptySections={true}/>
 
     return(
       <View>
